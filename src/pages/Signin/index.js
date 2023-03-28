@@ -2,7 +2,7 @@ import { useState } from "react";
 import { publicPost } from "../../utilities/apiCaller";
 import { Navbar } from "../../components";
 import Footer from "../../components/Footer/Footer"
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 // import style from "./styles";
 var response
 const Signin = () => {
@@ -61,7 +61,7 @@ const Signin = () => {
         >
           Sign in
         </button>
-        <p className="mt-2 text-center">don't have an account? <a href="/signup" className=" text-gray-500 hover:text-cyan-500 focus:text-white focus:outline-none">Sign Up</a></p>
+        <p className="mt-2 text-center">don't have an account? <NavLink to="/signup" className=" text-gray-500 hover:text-cyan-500 focus:text-white focus:outline-none">Sign Up</NavLink></p>
       </form>
       {/* </div> */}
       <Footer />
