@@ -1,8 +1,11 @@
 {
   "name": "squad-web-app",
   "version": "0.1.0",
+  "homepage": "https://TurtoiseMan.github.io/microtaskbidz-web-app",
   "private": true,
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +51,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.1",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
