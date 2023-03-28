@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/microtaskbidz-web-app/static/css/main.c09bc774.css",
-    "main.js": "/microtaskbidz-web-app/static/js/main.bb97b23b.js",
+    "main.js": "/microtaskbidz-web-app/static/js/main.6d2d0603.js",
     "static/js/787.70011376.chunk.js": "/microtaskbidz-web-app/static/js/787.70011376.chunk.js",
     "index.html": "/microtaskbidz-web-app/index.html",
     "main.c09bc774.css.map": "/microtaskbidz-web-app/static/css/main.c09bc774.css.map",
-    "main.bb97b23b.js.map": "/microtaskbidz-web-app/static/js/main.bb97b23b.js.map",
+    "main.6d2d0603.js.map": "/microtaskbidz-web-app/static/js/main.6d2d0603.js.map",
     "787.70011376.chunk.js.map": "/microtaskbidz-web-app/static/js/787.70011376.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c09bc774.css",
-    "static/js/main.bb97b23b.js"
+    "static/js/main.6d2d0603.js"
   ]
 }
