@@ -26,7 +26,7 @@ const Signup = () => {
     console.log(response)
     if(response.message==="Success")
     {
-      navigate("/")
+      navigate("/signin")
     }
   };
 
