@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import logo from "../../MicroTaskBidz.png";
 import styles from "./styles";
@@ -6,9 +5,9 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
   const [showHamburgerMenu, setShowHamburgerMenu] = useState(true);
-    const handleLogoutClick = () => sessionStorage.removeItem("token");
+  const handleLogoutClick = () => sessionStorage.removeItem("token");
   return (
-    <header className=" t-0 l-0 w-full bg-gray-900 sm:flex sm:justify-between  mb-8">
+    <header className=" t-0 l-0 mb-8 w-full bg-gray-900 sm:flex  sm:justify-between">
       <div className="flex items-center justify-between px-4 py-3">
         <div>
           <img className="h-4" src={logo} />
@@ -43,12 +42,19 @@ const Navbar = (props) => {
         <NavLink to="/" className={styles.nav_link}>
           Home
         </NavLink>
-                {props.authenticated ? (<NavLink to="/signup" onClick={handleLogoutClick} className={styles.nav_link}>
-          Sign Out
-        </NavLink>):( 
-        <NavLink to="/signin" className={styles.nav_link}>
-          Sign in
-        </NavLink>)}
+        {props.authenticated ? (
+          <NavLink
+            to="/signup"
+            onClick={handleLogoutClick}
+            className={styles.nav_link}
+          >
+            Sign Out
+          </NavLink>
+        ) : (
+          <NavLink to="/signin" className={styles.nav_link}>
+            Sign in
+          </NavLink>
+        )}
       </div>
     </header>
   );

@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white text-center flex justify-center w-full bottom-0 left-0 right-0">
-      <div className={ "text-sm p-4 text-center"}>
+    <footer className="bottom-0 left-0 right-0 flex w-full justify-center bg-gray-900 text-center text-white">
+      <div className={"p-4 text-center text-sm"}>
         <span>© 2023 Copyright: </span>
-        <a href="/" className="text-white font-semibold">
+        <a href="/" className="font-semibold text-white">
           MicroTaskBidz
         </a>
       </div>
